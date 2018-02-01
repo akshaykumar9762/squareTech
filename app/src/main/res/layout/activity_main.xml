@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dailyexpensecalculator.asquare.com.dailyexpensecalculator.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:hint="Enter Amount"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/back"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edt_purpose"
+            android:textSize="35sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Purpose:Optional"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/txt_today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:hint="Today"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/back"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10-Tea"
+                android:background="@drawable/btn_back"
+                />
+            <Button
+                android:id="@+id/btn_twenty_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25-Break Fast"
+                android:background="@drawable/btn_back"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back">
+
+            <Button
+                android:id="@+id/btn_fifty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="50-Dinner"
+                android:padding="2dp"
+                android:background="@drawable/btn_back"/>
+            <Button
+                android:id="@+id/btn_hundred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100-ETC"
+                android:padding="2dp"
+                android:background="@drawable/btn_back"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_today"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:text="Today"
+                android:layout_weight="1"
+                android:background="@drawable/btn_back"/>
+
+            <Button
+                android:id="@+id/btn_find"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:text="FIND"
+                android:layout_weight="1"
+                android:background="@drawable/btn_back"/>
+
+            <Button
+                android:id="@+id/bt_add"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:text="ADD"
+                android:layout_weight="1"
+                android:background="@drawable/btn_back"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:hint="Todays Total:"
+                android:padding="2dp"
+                android:background="@drawable/back"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
